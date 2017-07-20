@@ -1,0 +1,26 @@
+//
+// Page theme (colors)
+// --------------------------------------------------
+
+body {
+    background: $body-bg;
+    color: #fff;
+
+    a,
+    a:hover,
+    a:focus,
+    a:active,
+    a:visited {
+        color: #fff;
+    }
+}
+.highlight-area,
+.card {
+    background: $highlight-bg;
+    color: $gray-light;
+
+    h2 {
+        color: $gray-dark;
+    }
+}
+

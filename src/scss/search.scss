@@ -1,0 +1,119 @@
+//
+// Search block
+// --------------------------------------------------
+.search-field-container {
+    position: relative;
+    padding: 0 0 0 18px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: $search-field-height - 10px;
+    border-radius: $search-field-height - 10px;
+    background: #FFFFFF;
+    color: $gray-light;
+    @extend .box-shadow-light;
+
+    > .glyphicon {
+        color: $btn-primary-color;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: $simple-space*0.5;
+    }
+}
+.search-input {
+    position: relative;
+    border: none;
+    color: $gray-light;
+    font-size: 16px;
+    &:focus {
+        outline: none; // Ideally, outline should only be removed for clicks (with JS)
+    }
+}
+.search-input-text {
+    height: $search-field-height - 10px;
+    border-radius: $search-field-height - 10px;
+}
+.search-label {
+    position: absolute;
+    top: 12px;
+    left: $simple-space*0.5;
+    font-size: 16px;
+    @extend .transtion-ease;
+}
+.search-input-text:focus + .search-label,
+.search-input-text.active + .search-label {
+    transform: scale(0.8) translateY(-90%) translateX(-10%);
+    opacity: 0.7;
+}
+.search-input-submit {
+    position: absolute;
+    right: 0;
+    height: $search-field-height - 10px;
+    padding: 0 $simple-space*0.5;
+    background: $btn-primary-color;
+    color: #FFFFFF;
+    border-radius: 0 $search-field-height $search-field-height 0;
+    @extend .transtion-ease;
+
+    &:hover {
+        background: lighten($btn-primary-color, 2);
+    }
+    &:focus,
+    &:active {
+        background: $btn-primary-color;
+        box-shadow: inset 0 0 10px darken($btn-primary-color, 20);
+    }
+}
+#job-location {
+    margin-right: 46px;/* avoid layers superposition with button */
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+    .search-form {
+        padding: $simple-space $simple-space 0 $simple-space;
+    }
+    .search-field-container,
+    .search-input-text {
+        height: $search-field-height;
+        border-radius: $search-field-height;
+    }
+    .search-field-container {
+        padding: 0 $simple-space;
+        margin-bottom: 0;
+    }
+    .search-input-text {
+        padding-left: $simple-space*0.5;
+    }
+    .search-input-submit {
+        height: $search-field-height;
+    }
+    #job-location {
+        margin-right: 69px;/* avoid layers superposition with button */
+    }
+    .search-label {
+        left: $simple-space*1.5;
+        top: 18px;
+    }
+    .search-input-text:focus + .search-label,
+    .search-input-text.active + .search-label {
+        transform: scale(0.7) translateY(-100%) translateX(-20%);
+    }
+}
+
+
+
+/* Google Maps Autocomplete styles override */
+.pac-container {
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    border-top: 1px solid #EEEEEE;
+}
+.pac-item {
+    border-top: none;
+}
+.pac-item + .pac-item {
+    border-top: 1px solid #EEEEEE;
+}
+

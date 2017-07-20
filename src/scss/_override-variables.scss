@@ -1,0 +1,24 @@
+//
+// Variables override
+// --------------------------------------------------
+
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+$gray-dark:              #383838;
+$gray-light:             #969696;
+$brand-primary:         #65D3F8;
+
+//## Settings for some of the most global styles.
+//** Background color for `<body>`.
+$body-bg:               $brand-primary;
+
+//** Background color for contrasted blocks.
+$highlight-bg:               #fff;
+//** Button background color.
+$btn-primary-color: #F96C5B;
+//** Spacing values.
+$simple-space: 30px;
+$search-field-height: 55px;

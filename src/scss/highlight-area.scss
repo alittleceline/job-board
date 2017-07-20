@@ -1,0 +1,36 @@
+//
+// Highlight area: description + illustration
+// --------------------------------------------------
+.highlight-area {
+    margin-bottom: $simple-space;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    article {
+        padding: $simple-space*0.5 0;
+    }
+}
+.highlight-area-illustration {
+    flex: 2 1 auto;
+}
+.highlight-area-paragraph {
+    flex: 1 1 410px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+    .highlight-area {
+        .container {
+            flex-direction: row;
+        }
+    }
+    .highlight-area-paragraph {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

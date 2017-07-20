@@ -1,0 +1,40 @@
+//
+// Sprite img
+// --------------------------------------------------
+@mixin stitches-sprite($x: 0, $y: 0, $width: 0, $height: 0) {
+    background-position: $x $y;
+    width: $width;
+    height: $height;
+}
+
+.sprite {
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 96px;
+    height: 80px;
+
+    &.sprite-item-1 {
+        @include stitches-sprite(0, 0, 96px, 80px);
+    }
+
+    &.sprite-item-2 {
+        @include stitches-sprite(0, -80px, 96px, 80px);
+    }
+
+    &.sprite-item-3 {
+        @include stitches-sprite(0, -160px, 96px, 80px);
+    }
+
+    &.sprite-item-4 {
+        @include stitches-sprite(0, -240px, 96px, 80px);
+    }
+
+    &.sprite-item-5 {
+        @include stitches-sprite(0, -320px, 96px, 80px);
+    }
+
+    &.sprite-item-6 {
+        @include stitches-sprite(0, -400px, 96px, 80px);
+    }
+}

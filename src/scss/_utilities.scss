@@ -1,0 +1,29 @@
+//
+// Utilities (layout & display helpers)
+// --------------------------------------------------
+img {
+    max-width: 100%;
+    height: auto;
+}
+ul {
+    padding: 0;
+}
+.list-style-none li {
+    list-style-type: none;
+}
+
+.vertical-center-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.transtion-ease {
+    transition: 200ms all ease;
+}
+.box-shadow-light {
+    box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.15);
+    @extend .transtion-ease;
+}
+.box-shadow-dark {
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.04);
+}

@@ -1,0 +1,47 @@
+//
+// Cards (list of small blocks)
+// --------------------------------------------------
+.card {
+    min-height: 310px;
+    max-width: 280px;
+    padding: $simple-space*0.5;
+    margin: 0 auto $simple-space*0.5;
+    border-radius: $simple-space*0.5;
+    font-size: 15px;
+    @extend .box-shadow-dark;
+    @extend .transtion-ease;
+
+    .sprite {
+        margin: auto;
+    }
+
+    h3:before {
+        content: "";
+        display: block;
+        margin: $simple-space*0.5 auto;
+        width: 50%;
+        height: 1px;
+        border-top: 1px solid;
+        opacity: 0.5;
+    }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+    .card {
+        padding: $simple-space;
+        margin: $simple-space  $simple-space*0.5;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+    .cards-container {
+        padding: 0 $simple-space*2;
+    }
+    .card {
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
