@@ -8,7 +8,7 @@ header {
     position: fixed;
     width: 100%;
     right: -100%;
-    padding: $simple-space*0.5;
+    padding: $simple-space $simple-space*0.5 $simple-space*0.5 $simple-space*0.5;
     margin-bottom: 0;
     list-style: none;
     background: #FFFFFF;
