@@ -1,13 +1,6 @@
 //
 // Typography (fonts, sizes, weight, alignment)
 // --------------------------------------------------
-@font-face {
-    font-family: 'questrial';
-    src: url('../fonts/questrial/Questrial-Regular.ttf') format('truetype');/* fonts.google doesn't provide woffs, which are lighter */
-    font-weight: normal;
-    font-style: normal;
-}
-
 body {
     font-family: 'questrial', Helvetica, Arial, sans-serif;
 }

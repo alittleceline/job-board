@@ -4,10 +4,20 @@
     <meta charset="utf-8">
     <title>Jobboard: the first automated job board</title>
     <link rel="stylesheet" href="dist/css/styles.css">
+    <link rel="dns-prefetch" href="https://maps.googleapis.com">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="description"
           content="Jobboard : take your life back in 3 simple steps and with our Auto Apply function, leave the job juggling to us!">
     <meta name="Keywords" content="Job search, Auto apply, job location" />
+    <style type="text/css">
+        /* early load of the font to reduce/avoid text "flicker" */
+        @font-face {
+            font-family: 'questrial';
+            src: url('./fonts/questrial/Questrial-Regular.ttf') format('truetype');/* fonts.google doesn't provide woffs, which are lighter */
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
 </head>
 <body>
 <header>
