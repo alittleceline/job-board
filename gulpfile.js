@@ -14,7 +14,7 @@ var
     dest = 'dist/';
 
 // Bootstrap scss source
-// Didn't have the time to fine tune bootstrap package. HEAVY by default
+// Didn't fine tune bootstrap package with http://getbootstrap.com/customize/. This is heavy by default
 // TODO: remove unused components & styles
 var bootstrapSass = {
     in: './node_modules/bootstrap-sass/'
